@@ -1,0 +1,94 @@
+/* Using Mistress Black's UI/UX Rules */
+
+.card {
+  background-color: #F5F7FA; /* Primary Açık */
+  color: #263238; /* Metin (Açık Zemin) */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  max-width: 320px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.actionButton {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background-color: #D32F2F; /* Vurgu */
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .actionButton {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.actionIcon {
+  width: 24px;
+  height: 24px;
+  color: #F5F7FA;
+}
+
+.infoContainer {
+  padding: 24px;
+}
+
+.brand {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #8D99AE; /* A slightly softer text color for tertiary info */
+  margin: 0 0 4px 0;
+}
+
+.name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 0 16px 0;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.currentPrice {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #D32F2F; /* Vurgu */
+}
+
+.originalPrice {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #8D99AE;
+  text-decoration: line-through;
+}

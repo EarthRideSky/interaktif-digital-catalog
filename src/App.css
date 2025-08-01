@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* A simple dark background to preview the component against */
+body {
+  background-color: #1E272E; /* Primary Koyu */
+  font-family: 'Inter', sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px;
+}
