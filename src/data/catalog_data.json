@@ -5,9 +5,6 @@
     "client": "Müşteri Adı Buraya Gelecek",
     "publicationDate": "GUN-AY-YIL"
   },
-  
-  // --- ÜRÜN VERİ TABANI ---
-  // Tüm ürünler burada, tek bir merkezde tanımlanır. Bu, veri tekrarını önler ve yönetimi kolaylaştırır.
   "products": [
     {
       "id": "Ürün1 ID",
@@ -19,39 +16,34 @@
       },
       "pricing": {
         "currentPrice": 11111,
-        "originalPrice": 22222, // İndirimli göstermek için, opsiyonel.
+        "originalPrice": 22222,
         "currency": "TL"
       },
-      "specs": [ // Metinsel özellik listesi
+      "specs": [
         {"name": "Özellik 1", "value": "Özellik 1 açıklaması"},
         {"name": "Özellik 2", "value": "Özellik 2 açıklaması"}
       ],
-      "features": [ // İkonlarla gösterilecek ürün detay listesi
+      "features": [
         {"name": "Detay 1", "icon": "icons/detay1.svg"},
         {"name": "Detay 2", "icon": "icons/detay2.svg"},
         {"name": "Detay 3", "icon": "icons/detay3.svg"},
         {"name": "Detay 4", "icon": "icons/detay4.svg"}
       ],
-      "callToAction": { // Ürün kartındaki '+' ikonunun görevi
-        "type": "link", // 'link' veya 'popup' olabilir.
-        "target": "/anakategori/altkategori" // Gidilecek URL veya açılacak popup'ın ID'si
+      "callToAction": {
+        "type": "link",
+        "target": "/anakategori/altkategori"
       }
     },
     {
       "id": "Ürün2 ID",
-      "name": "Ürün2 Adı",
-      // ... Bu ürünün diğer detayları ...
+      "name": "Ürün2 Adı"
     }
-    // ... Diğer tüm ürünler buraya eklenecek ...
   ],
-
-  // --- SAYFA YAPISI ---
-  // Katalogdaki sayfalar, bu dizi ile sırayla oluşturulur.
   "pages": [
     {
       "pageId": "p01",
       "pageNumber": 1,
-      "layoutType": "cover_page", // Kapak sayfası düzeni
+      "layoutType": "cover_page",
       "content": {
         "backgroundImage": "https://ornek.com/images/cover-bg.jpg",
         "logo": "https://ornek.com/images/marka-logo.svg",
@@ -61,8 +53,8 @@
     },
     {
       "pageId": "p02",
-      "pageNumber": "2-3", // Çift sayfa gösterimi
-      "layoutType": "split_image_page", // İkiye bölünmüş görsel düzeni
+      "pageNumber": "2-3",
+      "layoutType": "split_image_page",
       "content": {
         "leftImage": "https://ornek.com/images/leftpage-image.jpg",
         "rightImage": "https://ornek.com/images/rightpage-image.jpg"
@@ -71,7 +63,7 @@
     {
       "pageId": "p03",
       "pageNumber": "4-5",
-      "layoutType": "campaign_banner_page", // Kampanya afişi düzeni
+      "layoutType": "campaign_banner_page",
       "content": {
         "backgroundImage": "https://ornek.com/images/summer-bg.jpg",
         "title": "KAMPANYA SLOGANI",
@@ -79,10 +71,10 @@
           "text": "11.111 TL İNDİRİM",
           "backgroundColor": "#FFA500"
         },
-        "productImages": [ // Kampanyadaki ürünlerin görselleri
-            "https://ornek.com/images/campaign1.png",
-            "https://ornek.com/images/campaign2.png",
-            "https://ornek.com/images/campaign3.png"
+        "productImages": [
+          "https://ornek.com/images/campaign1.png",
+          "https://ornek.com/images/campaign2.png",
+          "https://ornek.com/images/campaign3.png"
         ],
         "terms": "Kampanya 2-31 Ağustos 2025 tarihleri arasında geçerlidir..."
       }
@@ -90,10 +82,10 @@
     {
       "pageId": "p04",
       "pageNumber": "6-7",
-      "layoutType": "product_grid_4", // 4'lü ürün listesi düzeni
+      "layoutType": "product_grid_4",
       "content": {
         "title": "ALT KATEGORİ ADI",
-        "productIds": [ // Ürün veritabanından sadece ID'leri referans alıyoruz
+        "productIds": [
           "Ürün1 ID",
           "Ürün2 ID",
           "Ürün3 ID",
