@@ -1,19 +1,7 @@
 import React, { useState } from 'react';
 import useCatalogData from '../hooks/useCatalogData';
-
-// --- PLACEHOLDER COMPONENTS ---
-// These will be replaced by actual components in subsequent steps.
-const PageLayout = ({ page }) => (
-  <div className="flex items-center justify-center h-full text-white text-2xl font-display">
-    Rendering Page: {page.pageId} ({page.layoutType})
-  </div>
-);
-const NavigationControls = (props) => (
-  <div className="absolute bottom-0 left-0 w-full p-8 text-center text-white font-mono">
-    Navigation Controls Placeholder
-  </div>
-);
-// --- END PLACEHOLDERS ---
+import NavigationControls from './NavigationControls';
+import PageLayout from '../pages/PageLayout';
 
 const CatalogContainer = () => {
     const { pages } = useCatalogData();
